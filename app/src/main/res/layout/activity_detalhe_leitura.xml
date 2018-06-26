@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llDetalheLeituras"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#999"
+    tools:context=".DetalheLeitura">
+
+    <TextView
+        android:id="@+id/txtLeituraTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leitura e data"
+        android:textSize="25dp"
+        android:textColor="#600060"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apartamento"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gás"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="#ddd"
+        android:paddingHorizontal="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llTableAptos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llTableLeituraGas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#999"
+    tools:context=".DetalheCondominio">
+
+    <TextView
+        android:id="@+id/txtNomeDoCondominio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:text="Condominio"
+        android:textAlignment="center"
+        android:background="#600060"
+        android:textColor="#ddd"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:text="Leituras"
+        android:textAlignment="center"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btnAddLeitura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:background="#006666"
+        android:text="Adicionar Leitura"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="#000"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_weight="3"
+            android:text="Nº"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_weight="1"
+            android:text="Data Leitura"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listTabelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="#ddd"></ListView>
+
+
+</LinearLayout>
